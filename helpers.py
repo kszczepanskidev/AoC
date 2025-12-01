@@ -1,3 +1,17 @@
+from os import environ
+from re import match
+from requests import get
+
+
+def fetchInput(name):
+    headers = {'Cookie': f'session={environ["AOCCOOKIE"]}'}
+    name = name.split('/')
+    day = match(r'0?(\d*)[ab]?.py', name[-1]).group(1)
+    year = name[-2]
+
+    input = get(f'https://adventofcode.com/{year}/day/{day}/input', headers=headers).text.splitlines()
+    return [l.strip() for l in input]
+
 def loadFile(name):
     return [l.strip() for l in open(f'{name.replace("b.py","").replace(".py","")}-in.txt').readlines()]
 
