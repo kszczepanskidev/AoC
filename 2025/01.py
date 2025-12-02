@@ -3,7 +3,7 @@ sys.path.append("..")
 from helpers import fetchInput
 input = fetchInput(__file__)
 
-def a():
+def a(): #1150
     knob = 50
     result = 0
 
@@ -24,7 +24,7 @@ def a():
 
     return result
 
-def b():
+def b(): #6738
     knob = 50
     result = 0
 
