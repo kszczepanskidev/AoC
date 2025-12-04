@@ -24,3 +24,8 @@ def flatten(list):
 
 def transpose(grid):
     return [''.join(list(i)) for i in zip(*grid)]
+
+def replace(string, character, index):
+    if index not in range(len(string)):
+        return string
+    return string[:index] + character + string[index+1:]
