@@ -1,7 +1,6 @@
 import sys
 sys.path.append("..")
 from helpers import fetchInput, merge_ranges
-from re import match
 
 input = fetchInput(__file__)
 

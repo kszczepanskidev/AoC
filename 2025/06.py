@@ -1,7 +1,6 @@
 import sys
 sys.path.append("..")
 from helpers import fetchInput, transpose
-from re import match
 
 input = [r+' ' for r in fetchInput(__file__, False)]
 operations = [v for v in input[-1].split() if v != ' ']

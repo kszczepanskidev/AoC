@@ -1,7 +1,6 @@
 import sys
 sys.path.append("..")
-from helpers import fetchInput, transpose
-from re import match
+from helpers import fetchInput
 
 input = fetchInput(__file__)
 input = [list(r) for r in input]

@@ -1,7 +1,6 @@
 import sys
 sys.path.append("..")
 from helpers import fetchInput, replace
-from re import match
 
 input = fetchInput(__file__)
 _width = len(input[0]) - 1
